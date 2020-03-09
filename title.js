@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    setInterval(function(){}, 500);
     var titleString = "";
     var i = 0;
     var arr = ["R","e","e","s","e"," ","H","."];
