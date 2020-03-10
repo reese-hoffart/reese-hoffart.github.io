@@ -14,6 +14,7 @@
     var myVar = setInterval(update, 100);
 });*/
 $(document).ready(function(){
+    //$(document).scrollTop(0);
     $("#hola").animate({bottom: '30px', opacity: '1'}, 3000);
     var i = 0;
     function update() {
