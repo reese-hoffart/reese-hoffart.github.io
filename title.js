@@ -1,5 +1,4 @@
-$(document).ready(function(){
-    setInterval(function(){}, 500);
+/*$(document).ready(function(){
     var titleString = "";
     var i = 0;
     var arr = ["R","e","e","s","e"," ","H","."];
@@ -13,4 +12,16 @@ $(document).ready(function(){
         }
     }
     var myVar = setInterval(update, 100);
+});*/
+$(document).ready(function(){
+    $("#hola").animate({bottom: '30px', opacity: '1'}, 3000);
+    var i = 0;
+    function update() {
+        if (i > 0) {
+            $("#subtitle").animate({bottom: '30px', opacity: '1'}, 1500);
+            clearInterval(myVar);
+        }
+        i++;
+    }
+    var myVar = setInterval(update, 500);
 });
