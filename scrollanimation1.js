@@ -19,14 +19,13 @@ setInterval(function update () {
             document.getElementById('subtitle').style.opacity = Math.abs(((scrollPos - 50) / 350) - 1);
         }*/
         if (aboutrel.top == 0) {
-            //document.getElementById('aboutimg').style.size = (3 * window.innerHeight) - (scrollPos - aboutpos.top) * 2 + "px";
-            $("#aboutimg").css("height", (3/*<- length to reach 0 size*/ * window.innerHeight) - (scrollPos - aboutpos.top) * 1.2/*<-start size*/);
-            if (!(parseInt($("#aboutimg").css("height")) <= window.innerHeight)) {
+            document.getElementById('about').style.backgroundSize = (3 * window.innerHeight) - (scrollPos - aboutpos.top) * 2 + "px";
+            if (!(parseInt($("#about").css("backgroundSize")) <= window.innerHeight)) {
                 $("#abouth").css("opacity", 0);
                 $("#aboutp").css("opacity", 0);
             }
-            if (parseInt($("#aboutimg").css("height")) <= window.innerHeight) {
-                $("#aboutimg").css("height", window.innerHeight);
+            if (parseInt($("#about").css("backgroundSize")) <= window.innerHeight) {
+                $("#about").css("backgroundSize", window.innerHeight);
                 $("#abouth").css("opacity", (scrollPos - (aboutpos.top + window.innerHeight)) / 500);
                 $("#aboutp").css("opacity", (scrollPos - (aboutpos.top + window.innerHeight) * 1.1) / 500);
             }

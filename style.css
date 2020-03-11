@@ -83,52 +83,22 @@ body {
 }
 .about {
     height: 100vh;
-    /*background-image: url("assets/imactiny-min.png");
+    background-image: url("assets/imactiny-min.png");
     background-size: 300vh;
     background-repeat: no-repeat;
-    background-position: center;*/
+    background-position: center;
     background-color: white;
     position: sticky;
     position: -webkit-sticky;
     top: 0px;
-    text-align: center;
-}
-div.outer {
-    width: 99vw; /* some width amount needed */
-    margin: 0 auto; 
-    overflow: hidden;
-}
-div.inner {
-    position:relative;
-    float: right; /* this was added and display removed */
-    right: 50%;
-}
-div.inner img {
-    position: relative; 
-    right:-50%; /* this was changed from "left" in original */
-}
-.aboutimg {
-    z-index: -2;
-    height: 100vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 .about h2 {
     opacity: 0;
     color: white;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 .about p {
     opacity: 0;
     color: white;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 .footer {
     background-color: black;
