@@ -28,6 +28,8 @@ window.addEventListener('scroll', function(){
             $("#aboutp").css("opacity", (scrollPos - (aboutpos.top + window.innerHeight) * 1.1) / 500);
         }
     }
-    document.getElementById('hola').style.opacity = Math.abs(((scrollPcnt - 9.30) / 16.28) - 1);
-    document.getElementById('subtitle').style.opacity = Math.abs(((scrollPcnt - 2.33) / 16.28) - 1);
+    $("#hola").css("opacity", ((window.innerHeight / 1.7) - scrollPos) / 400);
+    $("#subtitle").css("opacity", ((window.innerHeight / 2.2) - scrollPos) / 400);
+    /*document.getElementById('hola').style.opacity = Math.abs(((scrollPcnt - 9.30) / 16.28) - 1);
+    document.getElementById('subtitle').style.opacity = Math.abs(((scrollPcnt - 2.33) / 16.28) - 1);*/
 });
