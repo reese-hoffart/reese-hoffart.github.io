@@ -94,7 +94,7 @@ body {
 }
 @media only screen and (max-width: 1024px) {
     .about {
-        background-image: url("assets/imacmobile-min.png");
+        background-image: url("assets/imactinymobile-min.png");
     }
 }
 .about h2 {
