@@ -11,15 +11,15 @@ window.addEventListener('scroll', function(){ //check when scrolling
     if (aboutrel.top == 0) {
         //document.getElementById('about').style.backgroundSize = (3 * window.innerHeight) - (scrollPos - aboutpos.top) * 2 + "px";
         $("#about").css("backgroundSize", (3 * window.innerHeight) - (scrollPos - aboutpos.top) * 2);
-        if (!(parseInt($("#about").css("backgroundSize")) <= window.innerHeight)) {
-            $("#abouth").css("opacity", 0);
-            $("#aboutp").css("opacity", 0);
-        }
-        if (parseInt($("#about").css("backgroundSize")) <= window.innerHeight) {
-            $("#about").css("backgroundSize", window.innerHeight);
+        //if (!(parseInt($("#about").css("backgroundSize")) <= window.innerHeight)) {
+        //    $("#abouth").css("opacity", 0);
+        //    $("#aboutp").css("opacity", 0);
+        //}
+        //if (parseInt($("#about").css("backgroundSize")) <= window.innerHeight) {
+        //    $("#about").css("backgroundSize", window.innerHeight);
             $("#abouth").css("opacity", (scrollPos - (aboutpos.top + window.innerHeight)) / 500);
             $("#aboutp").css("opacity", (scrollPos - (aboutpos.top + window.innerHeight) * 1.1) / 500);
-        }
+        //}
     }
     $("#hola").css("opacity", ((window.innerHeight / 1.7) - scrollPos) / 400);
     $("#subtitle").css("opacity", ((window.innerHeight / 2.2) - scrollPos) / 400);
