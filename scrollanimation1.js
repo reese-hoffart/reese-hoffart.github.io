@@ -9,7 +9,8 @@ window.addEventListener('scroll', function(){ //check when scrolling
     scrollPcnt = (scrollPos / height) * 100;
     var aboutrel = document.getElementById("about").getBoundingClientRect();
     if (aboutrel.top == 0) {
-        document.getElementById('about').style.backgroundSize = (3 * window.innerHeight) - (scrollPos - aboutpos.top) * 2 + "px";
+        //document.getElementById('about').style.backgroundSize = (3 * window.innerHeight) - (scrollPos - aboutpos.top) * 2 + "px";
+        $("#about").css("backgroundSize", (3 * window.innerHeight) - (scrollPos - aboutpos.top) * 2);
         if (!(parseInt($("#about").css("backgroundSize")) <= window.innerHeight)) {
             $("#abouth").css("opacity", 0);
             $("#aboutp").css("opacity", 0);
