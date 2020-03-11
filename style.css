@@ -92,6 +92,11 @@ body {
     position: -webkit-sticky;
     top: 0px;
 }
+@media only screen and (max-width: 1024px) {
+    .about {
+        background-image: url("assets/imacmobile-min.png");
+    }
+}
 .about h2 {
     opacity: 0;
     color: white;
@@ -103,7 +108,9 @@ body {
 .footer {
     background-color: black;
     height: 150px;
+    vertical-align: middle;
 }
-.footer a {
+.footer a, .footer p {
     color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
