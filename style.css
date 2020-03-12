@@ -83,7 +83,7 @@ body {
 }
 .about {
     height: 100vh;
-    /*background-image: url("assets/imactiny-min.png");*/
+    background-image: url("assets/imactiny-min.png");
     background-size: 300vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -91,19 +91,12 @@ body {
     position: sticky;
     position: -webkit-sticky;
     top: 0px;
-    overflow: hidden;
 
 }
-/*@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1025px) {
     .about {
         background-image: url("assets/imacmobile-min.png");
     }
-}*/
-.aboutimg {
-    overflow: hidden;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 .about h2 {
     opacity: 0;
