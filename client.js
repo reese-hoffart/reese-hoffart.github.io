@@ -1,4 +1,4 @@
-const websocket = new WebSocket('ws://192.168.0.22:8080/');
+const websocket = new WebSocket('wss://192.168.0.22:8080/');
 
 websocket.onopen = function() {
     document.getElementById("console").innerHTML = document.getElementById("console").innerHTML + '[WARN] WebSocket Client Connected<br>';
