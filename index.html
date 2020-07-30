@@ -1,47 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-US">
-    <head id="head">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <title>Reese H</title>
-        <link rel="stylesheet" href="style.css">
-        <script>
-            window.onbeforeunload = function () {
-                window.scrollTo(0, 0);
-            }
-        </script>
+<html>
+    <head>
+        <title>Input Duplication Web Client</title>
     </head>
-    <body>
-        <div>
-            <div class="topnav" id="topnav">
-                <a href="#head">Top</a>
-                <a href="#about">About</a>
-                <p style="color: white; float: right;">11</p>
-            </div>
-            <div style="height: 100vh;">
-                <div class="header">
-                    <div style="height: 30vh;"></div>
-                    <div class="title" id="title">
-                        <h1 id="hola" class="hola">Reese H.</h1>
-                    </div>
-                    <div style="height: 50px;">
-                        <h2 class="subtitle" id="subtitle">Personal Website</h2>
-                    </div>
-                </div>
-            </div>
-            <div style="height: 300vh;">
-                <div class="about" id="about">
-                    <div style="height: 30%;"></div>
-                    <h2 id="abouth">About</h2>
-                    <p id="aboutp">Reese Hoffart is a high school student interested in computer science.</p>
-                </div>
-            </div>
-            <div class="footer">
-                <a href="https://github.com/reese-hoffart" target="_blank">GitHub</a>
-                <p>© 2020 Reese Hoffart</p>
-            </div>
-        </div>
+    <body id="body" style="position: fixed; top: 0; left: 0; width: 1366px; height: 768px; margin: 0px; padding: 0px;" onmousemove="onMouseMove(event)" onmousedown="onMouseDown(event)" onmouseup="onMouseUp(event)" onkeydown="onKeyDown(event)" onkeyup="onKeyUp(event)">
+        <p id="console"></p>
     </body>
-    <script src="scroll.js"></script>
-    <script src="scrollanimation1.js"></script>
-    <script src="title.js"></script>
+    <script src="client.js"></script>
 </html>
