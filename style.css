@@ -3,15 +3,16 @@
   margin: 0px;
 }
 
+.paragraph-end {
+  margin-bottom: 1rem;
+}
+
 * {
   font-family: 'Rubik';
 }
 
 html {
   height: 100vh;
-}
-
-h1 {
 }
 
 body {
@@ -49,3 +50,19 @@ body {
   transform-origin: center;
   object-fit: cover;
 }
+
+#separator-img {}
+
+#separator {
+  text-align: center;
+}
+
+#separator-img {
+  height: 20vh;
+}
+
+#bio-row {
+  padding: 10vh 20vw;
+}
+
+#bio {}
