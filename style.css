@@ -1,68 +1,48 @@
-.flush {
-  padding: 0px;
-  margin: 0px;
+h1, h2, h3, h4, h5, p {
+  font-family: 'Share Tech Mono';
 }
 
-.paragraph-end {
-  margin-bottom: 1rem;
+a {
+  padding: 5px;
+  color: whitesmoke;
+  font-size: x-large;
 }
 
-* {
-  font-family: 'Rubik';
+a:hover {
+  color: grey;
+  text-decoration: none;
 }
 
-html {
-  height: 100vh;
-}
-
-body {
-  height: 500vh;
-  background-color: white;
-}
-
-#hero-row {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-}
-
-#hero {
-  height: 120vh;
-  padding: 0px;
-  margin: 0px;
-
-  background-image: linear-gradient(rgba(255,255,255,0) 83%, rgba(255,255,255, .4) 88%, rgba(255,255,255,1));
-}
-
-#hero-name {
-  color: white;
-  font-family: 'Rubik';
-  font-weight: 400;
-}
-
-#hero-img {
-  height: 100%;
-  width: 83.3%;
+.title {
   position: absolute;
-  top: 0px;
-  z-index: -1;
-  transform: scale(1.4);
-  transform-origin: center;
-  object-fit: cover;
-}
-
-#separator-img {}
-
-#separator {
+  top: 45%;
   text-align: center;
+  width: 100%;
+
+  color: whitesmoke;
+  padding: 10px;
 }
 
-#separator-img {
-  height: 20vh;
+.home {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+  z-index: -1;
+
+  background-size: cover;
+  background-position: center center;
+  background-image: url('assets/future-city.jpeg');
 }
 
-#bio-row {
-  padding: 10vh 20vw;
-}
+.header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 50px;
 
-#bio {}
+  padding: 5px;
+}
